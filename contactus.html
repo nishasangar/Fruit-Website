@@ -10,7 +10,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Home</a>
+  <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -39,23 +39,65 @@
   </div>
 </nav>
   <div class="mycontainer">
-  <div class="myrow">
-    <div class="mycol-sm">
-    <a href="apple.html">  <img src="./apple.jpg"> </a>
-    </div>
-    <div class="mycol-sm">
-      <a href="banana.html">  <img src="./banana.png"> </a>
-    </div>
+    <div class="row">
+      <form method="post" action="#" class="contact-form">
 
-    </div>
-    <div class="myrow">
-      <div class="mycol-sm">
-        <a href="orange.html">  <img src="./orange.png"> </a>
-      </div>
-      <div class="mycol-sm">
-        <a href="blueberries.html">  <img src="./blueberry.png"> </a>
-      </div>
+        <div class="row">
+          <div class="col-sm">
+            <label for="name">Name</label>
+          </div>
 
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Your name" required="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label for="email">Email</label>
+          </div>
+
+          <div class="col-sm">
+            <input type="email" name="email" id="email" placeholder="Your email" required="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label for="find-us">How did you find us?</label>
+          </div>
+
+          <div class="col-sm">
+            <select name="find-us" id="find-us">
+              <option value="friends" selected="">Friends</option>
+              <option value="search">Search engine</option>
+              <option value="a">Advertisement</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <label>Leave us a message</label>
+          </div>
+
+          <div class="col-sm">
+            <textarea name="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label>&nbsp;</label>
+          </div>
+
+          <div class="col-sm">
+            <a class="btn btn-outline-primary btn-full book-now-btn" href="#">Submit</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
       </div>
   </div>
 </body>
